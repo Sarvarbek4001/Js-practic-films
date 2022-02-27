@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+       
+    <section class="movies">
+        <div class="movies__container container">
+            <h1 class="movies__title">Movies</h1>
+            <form class="form js-search-form">
+                <select class="select js-genres">
+                    <option value="All">All</option>
+                </select>
+                <input class="input js-search-input" type="text" name="" placeholder="Search..." id="">
+                <select class="movies__form-input js-sort">
+                    <option value="0">A-Z</option>
+                    <option value="1">Z-A</option>
+                    <option value="2">New-Old</option>
+                    <option value="3">Old-New</option>
+                </select>
+                <button class="search__btn">Search</button>
+            </form>
+            <ul class="movies__list">
+                           
+            </ul>
+        </div>
+        </section>
+
+        <div class="modal">
+            <div class="modal__content glow-on-hover">
+                <h2 class="modal__title">Kino nomi</h2>
+                <p class="modal__describtion">Kino ta'rifi</p>
+                <button class="modal-btn">&times</button>
+            </div>
+        </div>
+
+
+
+      <!-- Templates -->
+
+      <template id="movie-template">
+        <li class="movie glow-on-hover">
+            <img class="movie-img" src="https://picsum.photos/250/300" alt="" >
+            <div class="movie-content">
+                <h2 class="moive-title"></h2>
+                <ul class="movie-genre">
+                </ul>
+                <span class="movie-year">1998</span>
+                <button class="js-more-btn">More</button>
+            </div>
+           </li>   
+      </template>
+     <script src="./js/films.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
